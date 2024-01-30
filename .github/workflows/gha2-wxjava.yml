@@ -6,7 +6,6 @@ on:
       - fork-2
 
 jobs:
-  build:
     strategy: matrix
     runs-on: ubuntu-latest
     steps:
