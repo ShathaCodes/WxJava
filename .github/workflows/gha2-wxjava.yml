@@ -5,5 +5,7 @@ on:
 jobs:
   my-job:
     name: My Job
-
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
