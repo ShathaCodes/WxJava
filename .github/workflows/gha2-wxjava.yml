@@ -4,7 +4,8 @@ on:
     branches:
       - develop
 jobs:
-  my-job:
+  newjob:
+    name: newjob
     strategy: matrix
     runs-on: ubuntu-latest
     steps:
