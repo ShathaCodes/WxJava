@@ -5,11 +5,18 @@ on:
 
 jobs:
   build:
+  - name: Placeholder
+    strategy: matrix
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/cache@version
       with:
         path: ~/.maven-
         key: ${{ runner.os }}-maven-${{ hashfiles(arg) }}
-      uses: actions/cache@version
-
+    - name: build with maven-
+      uses: actions/setup-java@version
+      with:
+        java-version: ${{ matrix.java }}
+      uses: actions/checkout@version
+      run: mvn clean package -DskipTests=true -Dcheckstyle.skip=true
 
