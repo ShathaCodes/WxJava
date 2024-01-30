@@ -5,7 +5,6 @@ on:
 
 jobs:
   build:
-  - name: Placeholder
     strategy: matrix
     runs-on: ubuntu-latest
     steps:
