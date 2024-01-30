@@ -10,7 +10,7 @@
 
 #### 微信`Java`开发工具包，支持包括微信支付、开放平台、公众号、企业微信、视频号、小程序等微信功能模块的后端开发。
 
-<div align="center">
+<div align="">
   <b>特别赞助</b>
 </div>
 <table align="center" cellspacing="0" cellpadding="0" width="500">
