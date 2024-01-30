@@ -11,10 +11,11 @@ jobs:
       with:
         path: ~/.maven-
         key: ${{ runner.os }}-maven
-    - name: build with maven-
+    - name: build with maven
+    - uses: actions/checkout@version
       uses: actions/setup-java@version
       with:
         java-version: '8'
-      uses: actions/checkout@version
-      run: mvn clean package -DskipTests=true -Dcheckstyle.skip=true
+
+    - run: mvn clean package -DskipTests=true -Dcheckstyle.skip=true
 
