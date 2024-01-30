@@ -2,7 +2,7 @@ name: placeholder_Name
 
 on:
   pull_request:
-    branches: branch-name
+    branches: fork-2
   push:
 
 jobs:
