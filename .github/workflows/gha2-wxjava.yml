@@ -7,14 +7,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/cache@version
+    - uses: actions/cache@v3.5.0
       with:
         path: ~/.maven-
         key: ${{ runner.os }}-maven
     - name: checkout
       uses: actions/checkout@version
     - name: build with maven  
-      uses: actions/setup-java@version
+      uses: actions/setup-java@v3.12.0
       with:
         java-version: '8'
     - name: run script
