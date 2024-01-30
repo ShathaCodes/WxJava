@@ -1,11 +1,10 @@
 name: placeholder_Name
-
 on:
   push:
     branches:
-      - fork-2
-
+      - develop
 jobs:
+  my-job:
     strategy: matrix
     runs-on: ubuntu-latest
     steps:
