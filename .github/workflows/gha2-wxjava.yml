@@ -10,7 +10,7 @@ jobs:
     - uses: actions/cache@version
       with:
         path: ~/.maven-
-        key: ${{ runner.os }}-maven-${{ hashfiles(arg) }}
+        key: ${{ runner.os }}-maven
     - name: build with maven-
       uses: actions/setup-java@version
       with:
