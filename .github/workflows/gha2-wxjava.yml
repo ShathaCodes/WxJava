@@ -1,8 +1,11 @@
 name: placeholder_Name
 
+on:
+  pull_request:
+    branches: fork-2
+  push:
 
 jobs:
-  example-matrix:
     strategy: matrix
     runs-on: ubuntu-latest
     steps:
@@ -17,4 +20,6 @@ jobs:
       uses: actions/checkout@version
     run: mvn clean package -DskipTests=true -Dcheckstyle.skip=true
 
+macos:
+  jdk: openjdk8
 
